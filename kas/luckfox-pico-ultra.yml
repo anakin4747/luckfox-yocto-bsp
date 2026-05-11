@@ -8,8 +8,6 @@ target: luckfox-image-minimal
 build_system: openembedded
 
 repos:
-  # --- Yocto/OE-core component repos (replaces the poky monorepo) -----------
-
   bitbake:
     url: https://github.com/openembedded/bitbake
     branch: "2.8"
@@ -35,8 +33,6 @@ repos:
     branch: scarthgap
     path: layers/yocto-docs
 
-  # --- OpenEmbedded layer collection ----------------------------------------
-
   meta-openembedded:
     url: https://github.com/openembedded/meta-openembedded
     branch: scarthgap
@@ -45,8 +41,6 @@ repos:
       meta-oe:
       meta-python:
       meta-networking:
-
-  # --- Board-specific local layers ------------------------------------------
 
   meta-luckfox-bsp:
     path: layers/meta-luckfox-bsp

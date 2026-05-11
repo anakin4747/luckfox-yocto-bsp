@@ -1,14 +1,5 @@
 header:
   version: 14
 
-# ---------------------------------------------------------------------------
-# KAS lock file – pins exact git commits for reproducible builds.
-#
-# Regenerate this file by running:
-#   make lock
-#
-# which runs: kas lock kas/luckfox-pico-ultra.yml
-# ---------------------------------------------------------------------------
-
 overrides:
   repos: {}

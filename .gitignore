@@ -1,6 +1,13 @@
 # Yocto build output
 build/
 
+# Layers managed by kas (cloned at build time, never committed)
+layers/bitbake/
+layers/openembedded-core/
+layers/meta-yocto/
+layers/yocto-docs/
+layers/meta-openembedded/
+
 # Shared caches (kept outside the repo by convention)
 downloads/
 sstate-cache/
