@@ -12,6 +12,7 @@ repos:
     url: https://github.com/openembedded/bitbake
     branch: "2.8"
     path: layers/bitbake
+    layers: {}
 
   openembedded-core:
     url: https://github.com/openembedded/openembedded-core
@@ -32,6 +33,7 @@ repos:
     url: https://git.yoctoproject.org/yocto-docs
     branch: scarthgap
     path: layers/yocto-docs
+    layers: {}
 
   meta-openembedded:
     url: https://github.com/openembedded/meta-openembedded
