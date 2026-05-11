@@ -1,0 +1,19 @@
+# Yocto build output
+build/
+
+# Shared caches (kept outside the repo by convention)
+downloads/
+sstate-cache/
+
+# Editor / OS noise
+.DS_Store
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Python bytecode (from kas / oelint-adv)
+__pycache__/
+*.pyc
+*.pyo
