@@ -24,9 +24,6 @@ S = "${WORKDIR}/git/sysdrv/source/kernel"
 
 inherit kernel
 
-COMPATIBLE_MACHINE:luckfox-pico-ultra = "luckfox-pico-ultra"
-BBCLASSEXTEND = "machine"
-
 KBUILD_DEFCONFIG ?= "luckfox_rv1106_linux_defconfig"
 
 KERNEL_FEATURES:append = " cfg/fs/ext4.scc"
