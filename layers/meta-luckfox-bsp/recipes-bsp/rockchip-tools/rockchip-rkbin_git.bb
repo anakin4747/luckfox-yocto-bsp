@@ -24,17 +24,13 @@ inherit deploy
 
 COMPATIBLE_MACHINE = "luckfox-pico-ultra"
 
-RKBIN_DDR ?= "bin/rv11/rv1106_ddr_924MHz_v1.10.bin"
-RKBIN_LOADER ?= "bin/rv11/rv1106_miniloader_v1.10.bin"
-RKBIN_BL31 ?= "bin/rv11/rv1106_bl31_v1.10.elf"
-
 do_install[noexec] = "1"
 
 do_deploy() {
     install -d ${DEPLOYDIR}/rkbin
-    install -m 0644 ${S}/${RKBIN_DDR}    ${DEPLOYDIR}/rkbin/ddr.bin
-    install -m 0644 ${S}/${RKBIN_LOADER} ${DEPLOYDIR}/rkbin/loader.bin
-    install -m 0644 ${S}/${RKBIN_BL31}   ${DEPLOYDIR}/rkbin/bl31.elf
+    install -m 0644 ${S}/bin/rv11/rv1106_ddr_924MHz_v1.10.bin    ${DEPLOYDIR}/rkbin/ddr.bin
+    install -m 0644 ${S}/bin/rv11/rv1106_miniloader_v1.10.bin    ${DEPLOYDIR}/rkbin/loader.bin
+    install -m 0644 ${S}/bin/rv11/rv1106_bl31_v1.10.elf          ${DEPLOYDIR}/rkbin/bl31.elf
 }
 
 addtask deploy after do_compile before do_build
