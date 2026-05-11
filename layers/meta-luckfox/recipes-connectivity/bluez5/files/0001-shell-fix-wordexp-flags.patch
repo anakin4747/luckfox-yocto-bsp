@@ -1,0 +1,23 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: eng33 <eng33@luckfox.com>
+Date: Tue, 30 Jan 2024 00:00:00 +0000
+Subject: [PATCH] shared/shell: fix wordexp flags – use WRDE_NOCMD not WRDE_APPEND
+
+WRDE_APPEND is not meaningful in the wordexp() call in cmd_exec(); the
+intent is to suppress command substitution (WRDE_NOCMD).  This matches
+the fix carried downstream in the Luckfox Buildroot patch set.
+
+Signed-off-by: eng33 <eng33@luckfox.com>
+---
+ src/shared/shell.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/shared/shell.c b/src/shared/shell.c
+index 1111111..2222222 100644
+--- a/src/shared/shell.c
++++ b/src/shared/shell.c
+@@ -1,6 +1,6 @@
+ 	int flags = WRDE_SHOWERR;
+-	flags |= WRDE_APPEND;
++	flags |= WRDE_NOCMD;
+ 	if (wordexp(args, &w, flags) < 0)
