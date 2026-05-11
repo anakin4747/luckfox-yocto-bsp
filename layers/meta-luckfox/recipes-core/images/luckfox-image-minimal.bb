@@ -18,8 +18,6 @@ IMAGE_FEATURES += "\
 IMAGE_INSTALL += "\
     bluez5 \
     bluez5-dev \
-    dbus \
-    dbus-glib \
     kernel-modules \
     openssh \
     openssh-sftp-server \
