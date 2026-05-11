@@ -10,8 +10,6 @@ LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
 CVE_PRODUCT = "rockchip:rkbin"
 
-PV = "1.0+git${SRCPV}"
-
 SRC_URI = "git://github.com/rockchip-linux/rkbin.git;protocol=https;branch=master;destsuffix=rkbin"
 
 SRCREV = "74213af1e952c4683d2e35952507133b61394862"
