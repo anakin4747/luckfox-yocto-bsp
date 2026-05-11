@@ -27,7 +27,7 @@ repos:
       meta-networking:
 
   meta-luckfox-bsp:
-    path: layers/meta-luckfox-bsp
+    path: ../layers/meta-luckfox-bsp
 
   meta-luckfox:
-    path: layers/meta-luckfox
+    path: ../layers/meta-luckfox
