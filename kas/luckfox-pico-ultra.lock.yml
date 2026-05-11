@@ -1,0 +1,22 @@
+header:
+  version: 14
+
+# ---------------------------------------------------------------------------
+# KAS lock file – pins exact git commits for reproducible builds.
+#
+# Generate / refresh this file by running:
+#   kas lock kas/luckfox-pico-ultra.yml
+#
+# The commit SHAs below are for Scarthgap LTS (Yocto 5.0.x).
+# Update them whenever you want to move to a newer point release.
+# ---------------------------------------------------------------------------
+
+overrides:
+  repos:
+    poky:
+      # Scarthgap 5.0 branch – run `kas lock` to pin to a specific point release
+      commit: 783050a8d6ce5cd26d5e6d8c3b3b16dd5ba7cac3
+
+    meta-openembedded:
+      # Scarthgap branch – aligned with Yocto 5.0
+      commit: 5b6df559b2ba0d68f6ce9a42d34b37a6bba14fc2

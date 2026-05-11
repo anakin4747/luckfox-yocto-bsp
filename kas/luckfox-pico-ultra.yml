@@ -1,0 +1,33 @@
+header:
+  version: 14
+
+machine: luckfox-pico-ultra
+distro: luckfox
+target: luckfox-image-minimal
+
+build_system: openembedded
+
+repos:
+  poky:
+    url: https://git.yoctoproject.org/poky
+    branch: scarthgap
+    commit: HEAD
+    layers:
+      meta:
+      meta-poky:
+      meta-yocto-bsp:
+
+  meta-openembedded:
+    url: https://github.com/openembedded/meta-openembedded
+    branch: scarthgap
+    commit: HEAD
+    layers:
+      meta-oe:
+      meta-python:
+      meta-networking:
+
+  meta-luckfox-bsp:
+    path: layers/meta-luckfox-bsp
+
+  meta-luckfox:
+    path: layers/meta-luckfox
