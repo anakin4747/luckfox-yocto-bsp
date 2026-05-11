@@ -11,5 +11,4 @@ oelint-adv \
 	--constantmods +oelint-constantmods.json \
 	--suppress oelint.var.badimagefeature.allow-root-login \
 	--suppress oelint.var.badimagefeature.empty-root-password \
-	--suppress oelint.var.bbclassextend \
 	-- $(find $LAYERS -name "*.bb" -o -name "*.bbappend" | sort)
