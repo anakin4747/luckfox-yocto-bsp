@@ -20,10 +20,9 @@ IMAGE_INSTALL += "\
     bluez5-dev \
     kernel-modules \
     python3 \
+    udev-rules-luckfox \
     util-linux \
 "
-
-IMAGE_INSTALL += "udev-rules-luckfox"
 
 EXTRA_USERS_PARAMS = "usermod -P luckfox root;"
 
