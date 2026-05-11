@@ -1,7 +1,7 @@
 SUMMARY = "Minimal production image for Luckfox Pico Ultra (RV1106)"
 DESCRIPTION = "Minimal production rootfs for the Luckfox Pico Ultra (Rockchip RV1106). \
                Provides a BusyBox userland, Python 3 with hardware-interface bindings, BlueZ 5 \
-               Bluetooth stack, OpenSSH, Samba, D-Bus, and supporting utilities."
+               Bluetooth stack, Dropbear SSH, Samba, D-Bus, and supporting utilities."
 HOMEPAGE = "https://github.com/anakin4747/luckfox-yocto-bsp"
 BUGTRACKER = "https://github.com/anakin4747/luckfox-yocto-bsp/issues"
 SECTION = "images"
@@ -12,15 +12,13 @@ inherit core-image
 
 IMAGE_FEATURES += "\
     package-management \
-    ssh-server-openssh \
+    ssh-server-dropbear \
 "
 
 IMAGE_INSTALL += "\
     bluez5 \
     bluez5-dev \
     kernel-modules \
-    openssh \
-    openssh-sftp-server \
     packagegroup-base \
     packagegroup-core-boot \
     python3 \
