@@ -22,6 +22,5 @@ IMAGE_INSTALL += "\
     bluez5-dev \
     kernel-modules \
     python3 \
-    udev-rules-luckfox \
     util-linux \
 "
