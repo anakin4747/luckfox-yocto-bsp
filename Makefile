@@ -14,4 +14,4 @@ clean:
 	$(CQFD) exec kas clean kas/luckfox-pico-ultra.yml
 
 shell:
-	$(CQFD) -b shell
+	$(CQFD) run kas shell

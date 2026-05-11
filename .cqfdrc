@@ -4,17 +4,5 @@ name='pico-ultra'
 
 [build]
 command='kas build kas/luckfox-pico-ultra.yml -- --parse-only'
-files='build/tmp/deploy/images/luckfox-pico-ultra/'
-archive='%Po-%Pn-%Gh.tar.xz'
-docker_run_args='--network=host'
 
-[shell]
-command='/bin/bash'
-
-[kas-menu]
-command='kas menu kas/luckfox-pico-ultra.yml'
-
-[image-minimal]
-command='kas build kas/luckfox-pico-ultra.yml -- -c build luckfox-image-minimal'
-files='build/tmp/deploy/images/luckfox-pico-ultra/'
-archive='%Po-%Pn-minimal-%Gh.tar.xz'
+# vim: ft=ini
