@@ -12,7 +12,7 @@ repos:
     url: https://git.yoctoproject.org/poky
     branch: scarthgap
     commit: HEAD
-    path: ../layers/poky
+    path: layers/poky
     layers:
       meta:
       meta-poky:
@@ -22,14 +22,14 @@ repos:
     url: https://github.com/openembedded/meta-openembedded
     branch: scarthgap
     commit: HEAD
-    path: ../layers/meta-openembedded
+    path: layers/meta-openembedded
     layers:
       meta-oe:
       meta-python:
       meta-networking:
 
   meta-luckfox-bsp:
-    path: ../layers/meta-luckfox-bsp
+    path: layers/meta-luckfox-bsp
 
   meta-luckfox:
-    path: ../layers/meta-luckfox
+    path: layers/meta-luckfox
