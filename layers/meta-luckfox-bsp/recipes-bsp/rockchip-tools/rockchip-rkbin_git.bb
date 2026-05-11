@@ -6,7 +6,7 @@ DESCRIPTION = "Pre-built Rockchip binary blobs (DDR init, miniloader, BL31) \
 HOMEPAGE = "https://github.com/rockchip-linux/rkbin"
 BUGTRACKER = "https://github.com/rockchip-linux/rkbin/issues"
 SECTION = "bsp"
-LICENSE = "Proprietary"
+LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
 CVE_PRODUCT = "rockchip:rkbin"
 
