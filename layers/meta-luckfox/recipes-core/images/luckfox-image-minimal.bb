@@ -11,6 +11,8 @@ LICENSE = "MIT"
 inherit core-image
 
 IMAGE_FEATURES += "\
+    allow-root-login \
+    empty-root-password \
     package-management \
     ssh-server-dropbear \
 "
@@ -23,5 +25,3 @@ IMAGE_INSTALL += "\
     udev-rules-luckfox \
     util-linux \
 "
-
-EXTRA_USERS_PARAMS = "usermod -P luckfox root;"
