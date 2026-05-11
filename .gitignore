@@ -2,7 +2,6 @@
 build/
 
 # Layers managed by kas (cloned at build time, never committed)
-layers/poky/
 layers/bitbake/
 layers/openembedded-core/
 layers/meta-yocto/
