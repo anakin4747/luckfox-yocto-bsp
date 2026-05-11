@@ -1,8 +1,8 @@
 # nooelint: oelint.var.bbclassextend
-SUMMARY = "Rockchip binary firmware blobs and image packing tools for RV1106"
-DESCRIPTION = "Pre-built Rockchip binary blobs (DDR init, miniloader, BL31) and \
-               image packing tools required to produce a flashable firmware image \
-               for RV1106-based boards such as the Luckfox Pico Ultra."
+SUMMARY = "Pre-built Rockchip firmware blobs for RV1106"
+DESCRIPTION = "Pre-built Rockchip binary blobs (DDR init, miniloader, BL31) \
+               for the RV1106 SoC, used to produce a flashable firmware image \
+               for the Luckfox Pico Ultra."
 HOMEPAGE = "https://github.com/rockchip-linux/rkbin"
 BUGTRACKER = "https://github.com/rockchip-linux/rkbin/issues"
 SECTION = "bsp"
