@@ -25,7 +25,3 @@ IMAGE_INSTALL += "\
 "
 
 EXTRA_USERS_PARAMS = "usermod -P luckfox root;"
-
-IMAGE_ROOTFS_SIZE ?= "524288"
-
-do_image_complete[depends] += "virtual/kernel:do_deploy"
