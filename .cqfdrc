@@ -6,9 +6,10 @@ name='pico-ultra'
 # cqfd_<user>_luckfox_pico-ultra_<dockerfile-hash>
 
 [build]
-# Default build: resolve layer repos with kas (using the lock file for
-# reproducibility), then kick off the bitbake build.
-command='kas build kas/luckfox-pico-ultra.yml:kas/luckfox-pico-ultra.lock.yml'
+# Default build: resolve layers with kas then parse all recipes without
+# building.  This is fast and catches metadata/config errors early.
+# Switch to 'kas build ...' once parsing passes cleanly.
+command='kas build kas/luckfox-pico-ultra.yml -- --parse-only'
 
 # Files to include in a release archive (cqfd release)
 # Adjust the tmpdir path if you change TMPDIR in local.conf.
