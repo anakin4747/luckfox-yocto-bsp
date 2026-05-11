@@ -19,8 +19,6 @@ IMAGE_INSTALL += "\
     bluez5 \
     bluez5-dev \
     kernel-modules \
-    packagegroup-base \
-    packagegroup-core-boot \
     python3 \
     util-linux \
 "
