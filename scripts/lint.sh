@@ -9,7 +9,6 @@ oelint-adv \
 	--release scarthgap \
 	--color \
 	--constantmods +oelint-constantmods.json \
-	--suppress oelint.var.bbclassextend \
 	--suppress oelint.var.badimagefeature.allow-root-login \
 	--suppress oelint.var.badimagefeature.empty-root-password \
 	-- $(find $LAYERS -name "*.bb" -o -name "*.bbappend" | sort)
