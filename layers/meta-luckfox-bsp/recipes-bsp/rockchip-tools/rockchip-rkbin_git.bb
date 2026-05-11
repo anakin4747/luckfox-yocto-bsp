@@ -21,6 +21,8 @@ S = "${WORKDIR}/rkbin"
 
 inherit deploy
 
+COMPATIBLE_MACHINE = "luckfox-pico-ultra"
+
 RKBIN_DDR ?= "bin/rv11/rv1106_ddr_924MHz_v1.10.bin"
 RKBIN_LOADER ?= "bin/rv11/rv1106_miniloader_v1.10.bin"
 RKBIN_BL31 ?= "bin/rv11/rv1106_bl31_v1.10.elf"
