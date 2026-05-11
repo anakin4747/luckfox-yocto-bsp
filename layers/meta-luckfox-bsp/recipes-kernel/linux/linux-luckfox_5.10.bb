@@ -11,12 +11,10 @@ CVE_PRODUCT = "linux_kernel"
 
 PV = "5.10+git${SRCPV}"
 
-KERNEL_REPO ?= "git://github.com/LuckfoxTECH/luckfox-pico.git"
-KERNEL_PROTO ?= "https"
 KBRANCH ?= "main"
 
 SRC_URI = "\
-    git://${@d.getVar('KERNEL_REPO').replace('git://','')};protocol=${KERNEL_PROTO};branch=${KBRANCH};destsuffix=git \
+    git://github.com/LuckfoxTECH/luckfox-pico.git;protocol=https;branch=${KBRANCH};destsuffix=git \
     file://luckfox-pico-ultra.cfg \
 "
 

@@ -11,10 +11,9 @@ CVE_PRODUCT = "rockchip:rkbin"
 
 PV = "1.0+git${SRCPV}"
 
-RKBIN_REPO ?= "git://github.com/rockchip-linux/rkbin.git"
 RKBIN_BRANCH ?= "master"
 
-SRC_URI = "git://${@d.getVar('RKBIN_REPO').replace('git://','')};protocol=https;branch=${RKBIN_BRANCH};destsuffix=rkbin"
+SRC_URI = "git://github.com/rockchip-linux/rkbin.git;protocol=https;branch=${RKBIN_BRANCH};destsuffix=rkbin"
 
 SRCREV = "74213af1e952c4683d2e35952507133b61394862"
 
