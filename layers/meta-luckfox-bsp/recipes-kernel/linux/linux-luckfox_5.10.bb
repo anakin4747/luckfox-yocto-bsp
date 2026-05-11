@@ -1,3 +1,4 @@
+# nooelint: oelint.var.bbclassextend
 SUMMARY = "Linux kernel for Luckfox Pico Ultra (Rockchip RV1106)"
 DESCRIPTION = "Rockchip-patched Linux 5.10 kernel for the Luckfox Pico Ultra \
                (RV1106 SoC, ARM Cortex-A7). Fetched from the LuckfoxTECH monorepo \
