@@ -10,20 +10,20 @@ build_system: openembedded
 repos:
   bitbake:
     url: https://github.com/openembedded/bitbake
-    branch: "2.8"
+    commit: b2404004135b669f8258c85c7b5aed4570a805c7
     path: layers/bitbake
     layers: {}
 
   openembedded-core:
     url: https://github.com/openembedded/openembedded-core
-    branch: scarthgap
+    commit: dc2df90b1d4f71023169d492f3819326e0e6c055
     path: layers/openembedded-core
     layers:
       meta:
 
   meta-yocto:
     url: https://git.yoctoproject.org/meta-yocto
-    branch: scarthgap
+    commit: 0845965f1d81d22d47dcf28c525c7463fafe5245
     path: layers/meta-yocto
     layers:
       meta-poky:
@@ -31,13 +31,13 @@ repos:
 
   yocto-docs:
     url: https://git.yoctoproject.org/yocto-docs
-    branch: scarthgap
+    commit: 1c5e7f136d7460fa5ad4c8a49ab1de31bd670e59
     path: layers/yocto-docs
     layers: {}
 
   meta-openembedded:
     url: https://github.com/openembedded/meta-openembedded
-    branch: scarthgap
+    commit: ae7dfb12245c7f9b9a353499e2688015bd4e6413
     path: layers/meta-openembedded
     layers:
       meta-oe:

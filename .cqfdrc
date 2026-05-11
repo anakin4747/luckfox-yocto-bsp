@@ -2,44 +2,19 @@
 org='luckfox'
 name='pico-ultra'
 
-# cqfd will build the Docker image from .cqfd/docker/Dockerfile and name it
-# cqfd_<user>_luckfox_pico-ultra_<dockerfile-hash>
-
 [build]
-# Default build: resolve layers with kas then parse all recipes without
-# building.  This is fast and catches metadata/config errors early.
-# Switch to 'kas build ...' once parsing passes cleanly.
 command='kas build kas/luckfox-pico-ultra.yml -- --parse-only'
-
-# Files to include in a release archive (cqfd release)
-# Adjust the tmpdir path if you change TMPDIR in local.conf.
 files='build/tmp/deploy/images/luckfox-pico-ultra/'
-
-# Release archive name: org-name-<git-short-hash>.tar.xz
 archive='%Po-%Pn-%Gh.tar.xz'
-
-# Pass --network=host so the container can reach git servers and package
-# mirrors without any extra proxy configuration.
 docker_run_args='--network=host'
 
-# ---- Build flavors ---------------------------------------------------------
-
 [shell]
-# Interactive development shell inside the build container.
-# Usage: cqfd -b shell
 command='/bin/bash'
 
 [kas-menu]
-# Open kas's interactive layer/config chooser (if supported).
 command='kas menu kas/luckfox-pico-ultra.yml'
 
-[lock]
-# Regenerate the KAS lock file with current upstream HEAD commits.
-# Usage: cqfd -b lock
-command='kas lock kas/luckfox-pico-ultra.yml --output kas/luckfox-pico-ultra.lock.yml'
-
 [image-minimal]
-# Build only the minimal image target.
-command='kas build kas/luckfox-pico-ultra.yml:kas/luckfox-pico-ultra.lock.yml -- -c build luckfox-image-minimal'
+command='kas build kas/luckfox-pico-ultra.yml -- -c build luckfox-image-minimal'
 files='build/tmp/deploy/images/luckfox-pico-ultra/'
 archive='%Po-%Pn-minimal-%Gh.tar.xz'
