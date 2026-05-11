@@ -16,43 +16,17 @@ IMAGE_FEATURES += "\
 "
 
 IMAGE_INSTALL += "\
-    \
-    packagegroup-core-boot \
-    packagegroup-base \
-    \
-    busybox \
-    \
-    python3 \
-    python3-pip \
-    python3-aiohttp \
-    python3-click \
-    python3-jinja2 \
-    python3-pillow \
-    python3-pyserial \
-    python3-spidev \
-    python3-smbus2 \
-    python3-periphery \
-    \
     bluez5 \
     bluez5-dev \
-    \
-    openssh \
-    openssh-sftp-server \
-    \
-    samba \
-    samba-base \
-    \
     dbus \
     dbus-glib \
-    \
-    htop \
-    nano \
-    \
-    e2fsprogs \
-    e2fsprogs-resize2fs \
-    util-linux \
-    \
     kernel-modules \
+    openssh \
+    openssh-sftp-server \
+    packagegroup-base \
+    packagegroup-core-boot \
+    python3 \
+    util-linux \
 "
 
 IMAGE_INSTALL += "udev-rules-luckfox"
