@@ -19,7 +19,6 @@ IMAGE_FEATURES += "\
 
 IMAGE_INSTALL += "\
     bluez5 \
-    bluez5-dev \
     kernel-modules \
     python3 \
     util-linux \
