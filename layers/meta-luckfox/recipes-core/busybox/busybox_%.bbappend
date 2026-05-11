@@ -5,10 +5,10 @@
 #   - FEATURE_TELNETD_STANDALONE
 #   - FEATURE_TELNETD_INETD_WAIT
 
-FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
+FILESEXTRAPATHS:prepend:luckfox-pico-ultra := "${THISDIR}/files:"
 
 SRC_URI:append:luckfox-pico-ultra = " \
     file://telnetd.cfg \
 "
 
-COMPATIBLE_MACHINE = "luckfox-pico-ultra"
+COMPATIBLE_MACHINE:luckfox-pico-ultra = "luckfox-pico-ultra"

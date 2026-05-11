@@ -8,11 +8,15 @@ all: build
 build:
 	$(CQFD) init
 	$(CQFD)
+	$(MAKE) lint
+
+NPROC := $(shell nproc)
 
 # Lint all local layers with oelint-adv
 lint:
 	$(CQFD) exec oelint-adv \
-		--jobs auto \
+		--jobs $(NPROC) \
+		--release scarthgap \
 		--color \
 		layers/meta-luckfox-bsp/recipes-*/*/*.bb \
 		layers/meta-luckfox-bsp/recipes-*/*/*.bbappend \

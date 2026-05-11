@@ -7,6 +7,7 @@ WRDE_APPEND is not meaningful in the wordexp() call in cmd_exec(); the
 intent is to suppress command substitution (WRDE_NOCMD).  This matches
 the fix carried downstream in the Luckfox Buildroot patch set.
 
+Upstream-Status: Inappropriate [board-specific Luckfox downstream patch]
 Signed-off-by: eng33 <eng33@luckfox.com>
 ---
  src/shared/shell.c | 2 +-

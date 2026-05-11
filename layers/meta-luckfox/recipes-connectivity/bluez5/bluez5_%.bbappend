@@ -8,10 +8,10 @@
 # (WRDE_APPEND → WRDE_NOCMD) which is a genuine behavioural fix regardless
 # of the C library.
 
-FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
+FILESEXTRAPATHS:prepend:luckfox-pico-ultra := "${THISDIR}/files:"
 
 SRC_URI:append:luckfox-pico-ultra = " \
     file://0001-shell-fix-wordexp-flags.patch \
 "
 
-COMPATIBLE_MACHINE = "luckfox-pico-ultra"
+COMPATIBLE_MACHINE:luckfox-pico-ultra = "luckfox-pico-ultra"
